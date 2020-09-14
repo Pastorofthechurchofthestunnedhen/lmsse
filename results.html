@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}
+Search Results
+{% endblock %}
+{% block content %}
+    {% for x in result %}
+        <a href="{{ result[x][0] }}">{{ x }}</a>
+    {% endfor %}
+{% endblock %}
