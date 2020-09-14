@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}
+    Search
+{% endblock %}
+{% block styling %}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+
+}
+{% endblock %}
+{% block content %}
+    <form action="#" method="post">
+
+        <br>
+    <div class="container">
+            <label for="firstname"><b>Search By Name</b></label>
+            <input type="text" placeholder="Search By Name" name="firstname" />
+            <br><br>
+
+            <label for="lastname"><b>Search By ISBN</b></label>
+            <input type="text" placeholder="ISBN" name="lastname"/>
+            <br><br>
+            <label for="psw"><b>Search By Author</b></label>
+            <input type="text" placeholder="Author" name="psw" />
+
+            <br><br>
+            <label for="email"><b>Search By Language</b></label>
+            <input type="text" placeholder="Language" name="email" />
+
+            <br><br>
+            <label for="pnumber"><b>Search By Publisher</b></label>
+            <input type="text" placeholder="Publisher" name="pnumber" />
+
+            <br><br>
+            <button type="submit" value="submit" >Search</button>
+        </div>
+            <div class="container" style="background-color:#f1f1f1">
+
+        </div>
+    </form>
+{% endblock %}
